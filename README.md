@@ -9,3 +9,4 @@ Clone the repo
 
 elm-package install
 
+elm-live Bingo.elm --open --output=bingo.js
