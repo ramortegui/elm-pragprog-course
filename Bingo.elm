@@ -3,7 +3,15 @@ module Bingo exposing (..)
 import Html
 
 
-main =
-    "Hello, Bingo!!"
+playerInfo name gameNumber =
+    name ++ " - Game #" ++ (toString gameNumber)
+
+
+playerInfoText name gameNumber =
+    playerInfo name gameNumber
         |> String.toUpper
         |> Html.text
+
+
+main =
+    playerInfoText "Ruben" 3
